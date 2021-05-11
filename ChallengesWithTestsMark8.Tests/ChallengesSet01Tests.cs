@@ -126,6 +126,7 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData("John Thomas", "Hello, John Thomas!")]
         [InlineData("Leigh Ann", "Hello, Leigh Ann!")]
         [InlineData("", "Hello!")]
+
         // [InlineData(null, "Hello!")] // Assumption: string will not be null
         public void GetGreeting(string personName, string expectedGreeting)
         {

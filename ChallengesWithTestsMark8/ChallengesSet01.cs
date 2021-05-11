@@ -26,16 +26,18 @@ namespace ChallengesWithTestsMark8
             return number1 + number2;
         }
 
-        public int GetSmallestNumber()
+        public int GetSmallestNumber(int number1, int number2)
         {
-            int number1 = 10;
-            int number2 = 7;
-            int expected = 7;
             if (number1 > number2)
             {
-                return expected;
-            } 
+                return number2;
+            }
+            else
+            {
+                return number1;
+            }
             
+            //throw new NotImplementedException();
         }
 
         public long Multiply(long factor1, long factor2)
@@ -45,12 +47,20 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
+            if (nameOfPerson != "")
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
+            else
+            {
+                return "Hello!";[]
+            }
 
-            return (nameOfPerson);
         }
 
         public string GetHey()
         {
-            return GetHey();
+            return "HEY!";
+        }
     }
 }
